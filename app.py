@@ -4,6 +4,7 @@ import requests
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import urllib.parse
 import base64
+import os
 # from bs4 import BeautifulSoup
 from datetime import datetime,timedelta
 import json
