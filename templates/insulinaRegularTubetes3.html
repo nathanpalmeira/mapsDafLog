@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DAF - LOG</title>
+
+  </head>
+  <style>
+    .iframe-container {
+        overflow: hidden;
+        /* // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625) */
+        padding-top: 56.25%;
+        /* position: relative; */
+        }
+
+    .iframe-container iframe {
+         border: 0;
+         height: 100%;
+         left: 250px;
+         /* margin-left: 300px; */
+         position: absolute;
+         top: 0;
+         width: 1000px;
+        }
+    .iframe-container .teste {
+         border: 0;
+         height: 100%;
+         left: 0;
+         /* margin-left: 300px; */
+         position: absolute;
+         top: 0;
+         width: 250px;
+         text-align: center;
+
+         /* background-color: azure; */
+         /* background-image: url("../static/bg2.png"); */
+         /* background: url('bg.jpg'); */
+         /* z-index: 0 */
+         /* opacity: 0.5; */
+         }
+    .iframe-container .teste2 {
+      border: 0;
+      height: 100%;
+      left: 0;
+      /* margin-left: 300px; */
+      position: absolute;
+      top: 0;
+      width: 100%;
+      /* background-color: azure; */
+      background-image: url("../static/bg2.png");
+      /* backgrnd: url('bg.jpg'); */
+      z-index: 1
+      opacity: 0.5;
+
+    }
+     .btn {
+        /* background-color: white; */
+        /* box-sizing: border-box;
+        z-index:0
+        top: 0;
+        position: absolute;
+        font-family: "Roboto","Helvetica Neue",Arial,sans-serif;
+        font-size: 14px;
+        line-height: 1.42857143;
+
+        /* opacity: 0.5; */
+        /* color: black; */
+        /* border: 2px solid #4CAF50; /* Green */
+        border-box;
+        color: black;
+        display: block;
+        font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 20px;
+        list-style-image: none;
+        list-style-position: outside;
+        list-style-type: none;
+        position: relative;
+        -moz-osx-font-smoothing: grayscale;
+        /* height:  */
+        /* width: 200px; */
+
+        margin-top: 30px;
+        height: 40px;
+        padding-top: 15px;
+        background-color: white;
+        opacity: 0.5;
+        text-align: center;
+        /* cursor: alias; */
+        }
+  </style>
+  <body>
+
+    <div class="iframe-container">
+      <!-- <div class="teste" data-color="azure" data-image="../static/bg.jpg"> -->
+      <div class="teste">
+        <div class="teste2">
+
+        </div>
+        <a href="/insulinaNph10">
+        <div class="btn">
+          Insulina NPH 10ml
+        </div>
+        </a>
+        <a href="/insulinaRegular10">
+        <div class="btn">
+          Insulina Regular 10ml
+        </div>
+        </a>
+        <a href="/insulinaNphTubetes3">
+        <div class="btn">
+          Insulina NPH Tubetes 3ml
+        </div>
+        </a>
+        <a href="/insulinaRegularTubetes3">
+        <div class="btn" onclick="window.location='/insulinaRegularTubetes3'" >
+          Insulina Regular Tubetes 3ml
+        </div>
+        </a>
+
+      </div>
+      <iframe src="http://173.249.55.36:8080/geoserver/www/web/daf_insulina_2_regular_tubetes3ml.html" allowfullscreen></iframe>
+      <!-- <iframe src="//www.youtube.com/embed/KMYrIi_Mt8A" allowfullscreen></iframe> -->
+
+    </div>
+  </body>
+</html>
+
+ <!-- <iframe src="http://173.249.55.36:8080/geoserver/www/web/daf_insulina_2_nph_10ml.html"></iframe> -->
+<!--  -->
