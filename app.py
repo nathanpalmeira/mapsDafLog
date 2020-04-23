@@ -40,3 +40,7 @@ def insulinaNphTubetes3():
 @app.route("/insulinaRegularTubetes3")
 def insulinaRegularTubetes3():
     return render_template("insulinaRegularTubetes3.html", acao="BEM")
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
